@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  
+
+<head>
+    <meta charset="utf-8">
+    <title>Reunion | Zubayer & Shuvo</title>
+    <meta name="description" content="A page showing the time left for our Reunion in 2045">
+    <meta name="keywords" content="coming soon, Zubayer and Shuvo reunion, reunion for friendship, smart, reunion, Zubayer, Shuvo, friendship, 2045, Shuvo and Zubayer reunion 2045, reunion Zubayer and Shuvo, reunion Shuvo and Zubayer, reyabuZ, ovuhS">
+    <meta name="author" content="Zubayer">
+    
+    <!-- Mobile meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Friendship">
+    
+    <!-- Start Header styles -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- End Header styles-->
+    
+    <!--Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    
+    <!-- Favion -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png">
+    <style>
+    	.cont {
+		  color: #333;
+		  margin: 0 auto;
+		  text-align: center;
+		}
+		.li{
+			display: inline-block;
+			padding: 2rem;
+			font-size: 1.25em;
+		}
+		.span{
+			font-size: 5em;
+		}
+		@media only screen and (max-width: 600px) {
+		  .span {
+		    font-size: 2em;
+		  }
+		}
+		@media only screen and (max-width: 764px) {
+		  .span {
+		    font-size: 3.5em;
+		  }
+		}
+		@media only screen and (max-width: 364px) {
+		  .span {
+		    font-size: 1.75em;
+		  }
+		}
+		#years{
+			color: #9800de;
+		}
+		#days{
+			color: #db4844;
+		}
+		#hours{
+			color: #f07c22;
+		}
+		#minutes{
+			color: #f6da74;
+		}
+		#seconds{
+			color: #abcd58;
+		}
+    </style>
+    
+  </head>
+  <body>
+    <!-- Start Loader -->
+    <div class='loading'>
+      <div class='loader'>
+        <img height='80' src='images/loader.svg' width='80'>
+      </div>
+    </div>
+    <!-- End Loader -->
+    
+    <!-- Start Header -->
+    <header class='page-header' id='page-header'>
+      <div class='container-full'>
+        <div>
+          <div class='navbar-header'>
+            <!-- Logo -->
+            <a class='logo animated onstart' data-animation-delay='200' data-animation='fadeInDown' href='#clock'>
+              <div class='circle-logo-wrapper'>
+                <div class='circle'></div>
+                <i class="icon fa fa-rocket" aria-hidden="true"></i>
+              </div>
+              <strong>Friendship</strong> Zindabad
+            </a>
+          </div>
+          
+          <!-- Social navigation -->
+          <div class='social-nav'>
+            <ul>
+              <li class='animated onstart' data-animation-delay='600' data-animation='fadeInDown' href='www.facebool.com/#'>
+                <a data-placement='bottom' data-toggle='tooltip' href='#' title='Find us on Facebook'>
+                  <i class='fa fa-facebook'></i>
+                </a>
+              </li>
+              <li class='animated onstart' data-animation-delay='700' data-animation='fadeInDown' href='#'>
+                <a data-placement='bottom' data-toggle='tooltip' href='#' title='Find us on Twitter'>
+                  <i class='fa fa-twitter'></i>
+                </a>
+              </li>
+              <li class='animated onstart' data-animation-delay='800' data-animation='fadeInDown' href='#'>
+                <a data-placement='bottom' data-toggle='tooltip' href='#' title='Find us on Instagram'>
+                  <i class='fa fa-instagram'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Social navigation -->
+          
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Sidebar navigation -->
+    <nav class='sidebar-nav' id='sidebar-nav'>
+      <ul>
+        <li>
+          <a href='#welcome'>
+            <span class='nav-dot'></span>
+            <span class='nav-label'>
+              Home
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href='#about'>
+            <span class='nav-dot'></span>
+            <span class='nav-label'>
+              About
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href='#gallery'>
+            <span class='nav-dot'></span>
+            <span class='nav-label'>
+              Gallery
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href='#contacts'>
+            <span class='nav-dot'></span>
+            <span class='nav-label'>
+              Location
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Sidebar navigation -->
+    
+    <div class='page-wrap' id='fullpage'>
+      <!-- Particles Background -->
+      <canvas class='bg-particles' id='bg-particles'></canvas>
+      
+      <!-- Start Welcome -->
+      <section class='welcome section-content section background-parallax bg-image-1'>
+        <div class='overlay'></div>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <h1 class='section-title'>
+                <span id='headline'>InshaAllah, we will meet<span class="highlight f-bold"> soon!</span></span>
+              </h1>
+              <div id="clock" class="cont">
+				<div id="countdown">
+				   <ul>
+				      <li class="li"><span class="span" id="years"></span>Years</li>
+				      <li class="li"><span class="span" id="days"></span>Days</li>
+				      <li class="li"><span class="span" id="hours"></span>Hours</li>
+				      <li class="li"><span class="span" id="minutes"></span>Minutes</li>
+				      <li class="li"><span class="span" id="seconds"></span>Seconds</li>
+				   </ul>
+				  </div>
+              </div>
+              <div class='mg-t'>
+                <a class='btn btn-color btn-lg js-to-slide animated onstart' data-animation-delay='300' data-animation='fadeInUp' data-slide='4' href='#gallery'>
+                  See Photos
+                </a>
+                <a class='btn btn-outline btn-lg js-to-slide animated onstart' data-animation-delay='400' data-animation='fadeInUp' data-slide='2' href='#'>
+                  Learn more!
+                  <i class='fa fa-angle-down'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Welcome -->
+      
+      <!-- Start About -->
+      <section class='about section background-parallax bg-image-2'>
+        <div class='overlay'></div>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class='hero-content'>
+                <h1 class='section-title text-left animated' data-animation-delay='0' data-animation='fadeInUp'>
+                  About us
+                </h1>
+              </div>
+              <div class='row'>
+                <div class='col-sm-6'>
+                  <div class='mg-b'>
+                    <p class='animated' data-animation-delay='100' data-animation='fadeInUp'>
+                      We are friends from childhood. Our friendship is different from others. We got inspiration from a movie to reunited after a long time to see how much we changed.
+                      We fixed this date on 2045, 14 August, 10:00 AM on S.M. Model Govt. High School.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About -->
+      
+      <!-- Start Gallery -->
+      <section class='section background-parallax bg-image-6'>
+        <div class='overlay'></div>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class='hero-content'>
+                <h1 class='section-title text-left animated' data-animation-delay='0' data-animation='fadeInUp'>
+                  Gallery
+                </h1>
+                <div class='js-gallery owl-carousel owl-theme'>
+                  <div class='gallery-slide'>
+                    <div class='gallery-row'>
+                      <a class='gallery-item' href='images/backgrounds/bg-1.jpg' title='Free Space #1'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-1.jpg'>
+                        <div class='title'>
+                          Cosmic world
+                          <p class='sub-title'>
+                            Our Universe
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                      <a class='gallery-item' href='images/backgrounds/bg-4.jpg' title='Free Space #2'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-4.jpg'>
+                        <div class='title'>
+                          Our Earth
+                          <p class='sub-title'>
+                            Earth from a satelite
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                      <a class='gallery-item' href='images/backgrounds/bg-5.jpg' title='Free Space #3'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-5.jpg'>
+                        <div class='title'>
+                          Full Moon
+                          <p class='sub-title'>
+                            Our dim light!
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='gallery-row'>
+                      <a class='gallery-item' href='images/backgrounds/bg-3.jpg' title='Free Space #4'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-3.jpg'>
+                        <div class='title'>
+                          Continent
+                          <p class='sub-title'>
+                            How lights are there in the night!
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                      <a class='gallery-item' href='images/backgrounds/bg-6.jpg' title='Free Space #5'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-6.jpg'>
+                        <div class='title'>
+                          Wonder
+                          <p class='sub-title'>
+                            There is just SPACE!
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                      <a class='gallery-item' href='images/backgrounds/bg-2.jpg' title='Free Space #6'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-2.jpg'>
+                        <div class='title'>
+                          All planets
+                          <p class='sub-title'>
+                            Can you find earth here!
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class='gallery-slide'>
+                    <div class='gallery-row'>
+                      <a class='gallery-item' href='images/backgrounds/bg-1.jpg' title='Free Space #7'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-1.jpg'>
+                        <div class='title'>
+                          Wonder #1
+                          <p class='sub-title'>
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                      <a class='gallery-item' href='images/backgrounds/bg-2.jpg' title='Free Space #1'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-2.jpg'>
+                        <div class='title'>
+                          Wonder #2
+                          <p class='sub-title'>
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                      <a class='gallery-item' href='images/backgrounds/bg-3.jpg' title='Free Space #1'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-3.jpg'>
+                        <div class='title'>
+                          Wonder #3
+                          <p class='sub-title'>
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='gallery-row'>
+                      <a class='gallery-item' href='images/backgrounds/bg-4.jpg' title='Free Space #1'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-4.jpg'>
+                        <div class='title'>
+                          Wonder #4
+                          <p class='sub-title'>
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                      <a class='gallery-item' href='images/backgrounds/bg-5.jpg' title='Free Space #1'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-5.jpg'>
+                        <div class='title'>
+                          Wonder #5
+                          <p class='sub-title'>
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                      <a class='gallery-item' href='images/backgrounds/bg-6.jpg' title='Free Space #1'>
+                        <img alt='' class='img-responsive' src='images/gallery/img-6.jpg'>
+                        <div class='title'>
+                          Wonder #6
+                          <p class='sub-title'>
+                          </p>
+                        </div>
+                        <div class='icon'>
+                          <i class='fa fa-search-plus'></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Gallery -->
+      
+      
+      
+      <!-- Start Contacts -->
+      <section class='section-content contacts section background-parallax bg-image-4'>
+        <div class='overlay'></div>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-6'>
+              <h1 class='section-title animated' data-animation-delay='50' data-animation='fadeInUp'>
+                Contacts
+              </h1>
+              <form action='#' id='contact-form'>
+                <div class='form-wrap'>
+                  <div class='form-group animated' data-animation-delay='100' data-animation='fadeInUp'>
+                    <input class='form-control form-control-no-space border-bottom' id='contact-form-name' name='name' placeholder='Name' type='text'>
+                  </div>
+                  <div class='form-group animated' data-animation-delay='200' data-animation='fadeInUp'>
+                    <input class='form-control form-control-no-space border-bottom' id='contact-form-email_contact-form-email' name='email' placeholder='Email' type='text'>
+                  </div>
+                  <div class='form-group animated' data-animation-delay='300' data-animation='fadeInUp'>
+                    <textarea class='form-control form-control-no-space border-bottom' cols='30' id='contact-form-message' name='message' placeholder='Message' rows='5'></textarea>
+                  </div>
+                  <div class='form-group mg-t'>
+                    <button class='btn btn-color btn-lg btn-submit animated' data-animation-delay='350' data-animation='fadeInUp' type='submit'>
+                      Send Message
+                      <i class='fa fa-paper-plane'></i>
+                    </button>
+                  </div>
+                </div>
+                <div class='mgs'>
+                  <div class='success-message'>
+                    <i class='fa fa-check'></i>
+                    Your message has been sent successfully.
+                  </div>
+                  <div class='error-message'>
+                    <i class='fa fa-warning'></i>
+                    E-mail must be valid
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contacts -->
+      
+    </div>
+    <!-- Start Footer -->
+    <footer class='page-footer'>
+      <div class='container-full'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <div>
+              Made with <i class="fa fa-heart highlight" aria-hidden="true"></i> by
+              <a href='https://www.zubayer.tk/' target='_blank'>Zubayer Rahman</a>
+            </div>
+            <div class='copyright'>© 2017 - 2030 All rights reserved</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <!-- Start Scripts -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    
+    <script src="js/jquery.easing.1.3.js"></script>
+    
+    <!-- Bootsrap plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+    <!-- Youtube player -->
+
+    
+    <!-- Others -->
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    
+
+    
+    <!-- Particles -->
+    <script src="js/particles.js"></script>
+    
+    <!-- Moment -->
+    <script src="js/moment.js"></script>
+    <!-- Magnific popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    
+    <!-- Main -->
+    <script src="js/main.js"></script>
+    <script src="countdown.js"></script>
+    <!-- End Scripts -->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','../../../../../www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-64337971-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </body>
+
+
+</html>
