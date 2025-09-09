@@ -18,7 +18,7 @@
                 "images/backgrounds/bg-3.jpg", // Add different images
                 "images/backgrounds/bg-4.jpg",
                 "images/backgrounds/bg-6.jpg",
-                "images/backgrounds/bg-1.jpg",
+                "images/backgrounds/bg-1.webp",
                 "images/backgrounds/bg-2.jpg"
             ], {
                 duration: 3000,
