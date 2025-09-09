@@ -24,7 +24,9 @@
     <!-- End Header styles-->
     
     <!--Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
     <!-- Favion -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -246,7 +248,7 @@
                   <div class='gallery-slide'>
                     <div class='gallery-row'>
                       <a class='gallery-item' href='images/backgrounds/bg-1.webp' title='Free Space #1'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-1.webp'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-1.webp'>
                         <div class='title'>
                           Cosmic world
                           <p class='sub-title'>
@@ -258,7 +260,7 @@
                         </div>
                       </a>
                       <a class='gallery-item' href='images/backgrounds/bg-4.jpg' title='Free Space #2'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-4.jpg'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-2.webp'>
                         <div class='title'>
                           Our Earth
                           <p class='sub-title'>
@@ -270,7 +272,7 @@
                         </div>
                       </a>
                       <a class='gallery-item' href='images/backgrounds/bg-5.jpg' title='Free Space #3'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-5.jpg'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-5.jpg'>
                         <div class='title'>
                           Full Moon
                           <p class='sub-title'>
@@ -284,7 +286,7 @@
                     </div>
                     <div class='gallery-row'>
                       <a class='gallery-item' href='images/backgrounds/bg-3.jpg' title='Free Space #4'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-3.webp'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-3.webp'>
                         <div class='title'>
                           Continent
                           <p class='sub-title'>
@@ -296,7 +298,7 @@
                         </div>
                       </a>
                       <a class='gallery-item' href='images/backgrounds/bg-6.jpg' title='Free Space #5'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-6.jpg'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-6.jpg'>
                         <div class='title'>
                           Wonder
                           <p class='sub-title'>
@@ -308,7 +310,7 @@
                         </div>
                       </a>
                       <a class='gallery-item' href='images/backgrounds/bg-2.jpg' title='Free Space #6'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-2.webp'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-4.jpg'>
                         <div class='title'>
                           All planets
                           <p class='sub-title'>
@@ -324,7 +326,7 @@
                   <div class='gallery-slide'>
                     <div class='gallery-row'>
                       <a class='gallery-item' href='images/backgrounds/bg-1.webp' title='Free Space #7'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-1.webp'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-1.webp'>
                         <div class='title'>
                           Wonder #1
                           <p class='sub-title'>
@@ -335,7 +337,7 @@
                         </div>
                       </a>
                       <a class='gallery-item' href='images/backgrounds/bg-2.jpg' title='Free Space #1'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-2.webp'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-2.webp'>
                         <div class='title'>
                           Wonder #2
                           <p class='sub-title'>
@@ -346,7 +348,7 @@
                         </div>
                       </a>
                       <a class='gallery-item' href='images/backgrounds/bg-3.jpg' title='Free Space #1'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-3.webp'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-3.webp'>
                         <div class='title'>
                           Wonder #3
                           <p class='sub-title'>
@@ -359,7 +361,7 @@
                     </div>
                     <div class='gallery-row'>
                       <a class='gallery-item' href='images/backgrounds/bg-4.jpg' title='Free Space #1'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-4.jpg'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-4.jpg'>
                         <div class='title'>
                           Wonder #4
                           <p class='sub-title'>
@@ -370,7 +372,7 @@
                         </div>
                       </a>
                       <a class='gallery-item' href='images/backgrounds/bg-5.jpg' title='Free Space #1'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-5.jpg'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-5.jpg'>
                         <div class='title'>
                           Wonder #5
                           <p class='sub-title'>
@@ -381,7 +383,7 @@
                         </div>
                       </a>
                       <a class='gallery-item' href='images/backgrounds/bg-6.jpg' title='Free Space #1'>
-                        <img alt='' class='img-responsive' src='images/gallery/img-6.jpg'>
+                        <img loading='lazy' alt='' class='img-responsive' src='images/gallery/img-6.jpg'>
                         <div class='title'>
                           Wonder #6
                           <p class='sub-title'>
@@ -465,44 +467,42 @@
     <!-- End Footer -->
     
     <!-- Start Scripts -->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script defer src="js/jquery-3.2.1.min.js"></script>
     
-    <script src="js/jquery.easing.1.3.js"></script>
+    <script defer src="js/jquery.easing.1.3.js"></script>
     
     <!-- Bootsrap plugins -->
-    <script src="js/bootstrap.min.js"></script>
+    <script defer src="js/bootstrap.min.js"></script>
     
     
     <!-- Youtube player -->
 
     
     <!-- Others -->
-    <script src="js/jquery.fullPage.min.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <script defer src="js/jquery.fullPage.min.js"></script>
+    <script defer src="js/jquery.appear.js"></script>
+    <script defer src="js/jquery.backstretch.min.js"></script>
+    <script defer src="js/owl.carousel.min.js"></script>
     
 
     
     <!-- Particles -->
-    <script src="js/particles.js"></script>
+    <script defer src="js/particles.js"></script>
     
     <!-- Moment -->
-    <script src="js/moment.js"></script>
     <!-- Magnific popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script defer src="js/jquery.magnific-popup.min.js"></script>
     
     <!-- Main -->
-    <script src="js/main.js"></script>
-    <script src="countdown.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="countdown.js"></script>
     <!-- End Scripts -->
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','../../../../../www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-64337971-1', 'auto');
     ga('send', 'pageview');
     </script>

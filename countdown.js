@@ -28,5 +28,5 @@
           clearInterval(x);
         }
         //seconds
-      }, 0.1)
+      }, 1000)
   }());
